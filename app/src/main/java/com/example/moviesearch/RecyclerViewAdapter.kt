@@ -38,8 +38,8 @@ class RecyclerViewAdapter(val homefeed: Homefeed): RecyclerView.Adapter<Recycler
                 .apply(RequestOptions.centerCropTransform())
                 .into(view.imageView)
             itemView.txt_name.text = data.title
-            itemView.txt_email.text = "출연 ${data.actor}"
-            itemView.txt_phone.text = "감독 ${data.director}"
+            itemView.txt_email.text = "출연 ${data.actor}\n"
+            itemView.txt_phone.text = "감독 ${data.director}\n"
 
             //클릭시 웹사이트 연결
             itemView.setOnClickListener({
